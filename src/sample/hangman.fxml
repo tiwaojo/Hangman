@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="740.0"
+      xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.HangmanController">
+
+
+    <MenuBar id="MenuBar" styleClass="menu" stylesheets="@../resources/styles.css" VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" styleClass="menu" text="New"/>
+            <MenuItem mnemonicParsing="false" text="Open…"/>
+            <Menu mnemonicParsing="false" text="Open Recent"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Close"/>
+            <MenuItem mnemonicParsing="false" text="Save"/>
+            <MenuItem mnemonicParsing="false" text="Save As…"/>
+            <MenuItem mnemonicParsing="false" text="Revert"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Preferences…"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Quit"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Undo"/>
+            <MenuItem mnemonicParsing="false" text="Redo"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Cut"/>
+            <MenuItem mnemonicParsing="false" text="Copy"/>
+            <MenuItem mnemonicParsing="false" text="Paste"/>
+            <MenuItem mnemonicParsing="false" text="Delete"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" text="Select All"/>
+            <MenuItem mnemonicParsing="false" text="Unselect All"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp"/>
+        </Menu>
+    </MenuBar>
+    <SplitPane id="splitpane" dividerPositions="0.6" orientation="VERTICAL" prefWidth="640.0"
+               style="-fx-background-color: #383838;" stylesheets="@../resources/styles.css" VBox.vgrow="ALWAYS">
+        <styleClass>
+            <String fx:value="root"/>
+            <String fx:value="splitpane"/>
+        </styleClass>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0"
+                    stylesheets="@../resources/styles.css">
+            <Text fill="WHITE" layoutX="627.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  style="-fx-font-size: 20;" text="Lives:" AnchorPane.rightAnchor="64.28085937499998"
+                  AnchorPane.topAnchor="13.41796875"/>
+            <FlowPane fx:id="flowPane" layoutX="119.0" layoutY="97.0" AnchorPane.leftAnchor="120.0"
+                      AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="97.0"/>
+            <Text fx:id="lives" fill="WHITE" layoutX="689.0" layoutY="35.0" strokeType="OUTSIDE"
+                  strokeWidth="0.0" text="lives" AnchorPane.rightAnchor="15.008398437499977"
+                  AnchorPane.topAnchor="15.576171875">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </Text>
+        </AnchorPane>
+        <AnchorPane minHeight="-Infinity" minWidth="0.0">
+            <TilePane alignment="TOP_CENTER" hgap="3.0" layoutX="161.0" layoutY="30.0" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="86.0" prefWidth="315.0" tileAlignment="CENTER_RIGHT"
+                      vgap="5.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0"
+                      AnchorPane.topAnchor="30.0">
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="A"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="B"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="C"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="D"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="E"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="F"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="G"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="H"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="I"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="J"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="K"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="L"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="M"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="N"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="O"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="P"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="Q"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="R"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="S"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="T"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="U"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="V"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="W"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="X"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="Y"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="Z"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="'"/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text=","/>
+                <Button mnemonicParsing="false" onMouseClicked="#isCharExist" text="?"/>
+            </TilePane>
+        </AnchorPane>
+    </SplitPane>
+</VBox>

@@ -1,0 +1,12 @@
+.root{
+-fx-background-color: #383838;
+}
+.menu{
+    /* color: white; */
+}
+.menuitems{
+    color: white;
+    }
+.charbuttons{
+    align-self: center;
+}
