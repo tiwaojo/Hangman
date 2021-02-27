@@ -1,4 +1,4 @@
-# Hangman
+# [Hangman](misc/Hangman.png)
 
 Test your vocabulary in this game by guessing each of the letters to uncover the word or phrase.
 ### Tools
@@ -11,7 +11,7 @@ In order to execute the Hangman game JavaFX is  required. You can download JavaF
 You may run the code as the JavaFX installation guide indicates. The starting point for the Hamgman application can be found by right clicking main.java and selecting `Run main` in the [context menu](misc/Run Hangman in Intellij.png).
 
 ### Execution of Hangman Tests in Intellij
-In order to execute hangman tests, right click and navigate to the [context menu](misc/Running tests.png) to select the type of test you'd like to run. Coverage test reports are located [here](out/test/Hangman/sample/sample) and can be viewed in any browser.
+In order to execute hangman tests, right click and navigate to the [context menu](misc/Running tests.png) to select the type of test you'd like to run. Coverage test reports are located [here](out/test/Hangman/sample/sample). You may view the report in Intellij once a coverage test has been executed, or a [browser](Generate Coverage Report and Display in Browser.png) and can be viewed in any browser.
 
 ## Functionalities
 Hangman has an intuitive UI consisting of the slots the character will be entered and the buttons to cause the event. It follows an MVC style architecture of which the Hangman.java, Hangman.fxml, and HangmanController.java are designed to be respectfully. It uses JavaFX as a framework to develop as an application and tests using Junit.
